@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/*Table Styles */
+table.events {
+	background: white;
+	border: 10px outset rgb(153, 0, 153);
+	border-collapse: collapse;
+	font-size: 0.75em;
+	width: 100%;
+}
+
+/*Table Cell Styles */
+
+table.events th, table.events td {
+	border: 1px solid gray;
+}
