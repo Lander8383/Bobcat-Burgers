@@ -15,6 +15,7 @@
    <title>Contact Bobcat Burgers</title>
    <link href="base.css" rel="stylesheet" />
    <link href="layout2.css" rel="stylesheet" />
+   <link href="forms.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -35,11 +36,70 @@
   <article>
      <h1>Contact Us</h1>
 			<p>Contact Us using the number below to book Bobcat Burgers for a Private Event!</p>
-			<p>Also, feel free to call to ask any questions about our Menu or any events that we will be at!</p>
+			<p>Also, feel free to call or email to ask any questions about our Menu or any events that we will be at!</p>
 
+			<p>Email: <a href="mailto:bburgers@peru.com">Bburgers@peru.com</a></p>
 			<p>Call: <a href="tel:+4021234567">(402) 123-4567</a></p>
 			
 			<p>If calling past business hours or you don't get an answer, make sure to fill out the form below and we will get back to you as soon as possible!</p>
+			
+	<form id="survey" action="http://www.example.com/bburgers/survey" method="post">
+		<fieldset id="custInfo">
+			<legend>Customer Information</legend>
+			
+			<div class="formRow">
+			<label for="name">Name*</label>
+			<input name="custName" id="name" type="text" placeholder="First and Last Name" />
+			</div>
+			
+			<div class="formRow">
+			<label for="street">Street address</label>
+			<input name="custStreet" id="street" type="text" />
+			</div>
+			
+			<div class="formRow">
+			<label for="city">City</label>
+			<input name="custCity" id="city" type="text" />
+			</div>
+			
+			<div class="formRow">
+			<label for="state">State</label>
+			<input name="custState" id="state" type="text" />
+			</div>
+			
+			<div class="formRow">
+			<label for="zip">Postal code</label>
+			<input name="custZip" id="zip" type="text" placeholder="nnnnn (-nnnn)"  />
+			</div>
+			
+			<div class="formRow">
+			<label for="phone">Phone Number</label>
+			<input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" />
+			</div>
+			
+			<div class="formRow">
+			<label for="mail">E-mail*</label>
+			<input name="custEmail" id="mail" type="email" />
+			</div>
+			
+		</fieldset>
+		
+		<fieldset id="bookingInfo">
+		<legend>Enquire About a Booking</legend>
+		
+		<div class="formRow">
+			<label for="booking">Date of Booking</label>
+			<input name="bookingDate" id="visit" type="date" />
+		</div>
+		
+		<label for="commBox">Tell us more about your Booking. Such as location, party size, duration, dietary restrictions etc. The more information provided, the better we can assist you!</label>
+		<textarea name="bookingInfo" id="commBox"></textarea>
+		
+		<div id="buttons">
+			<input type="submit" value="Submit My Enquiry" />
+			<input type="reset" value="Cancel" />
+		
+		</fieldset>
 			
 			
 			<address>
@@ -49,7 +109,7 @@
 			</address>
   </article>
   <footer>
-      Bobcat Burgers &#8226; 100 Peru Ave, Peru, NE &nbsp; 68421 &#8226; 402-123-4567 &#8226; <a link="Instagram">Instagram</a>
+Bobcat Burgers &#8226; 100 Peru Ave, Peru, NE &nbsp; 68421 &#8226; <a href="tel:+4021234567">(402) 123-4567</a> &#8226; <a href="mailto:bburgers@peru.com">Bburgers@peru.com</a> &#8226; <a link="Instagram">Instagram</a>
    </footer>
 </body>
 
